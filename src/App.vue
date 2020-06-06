@@ -1,16 +1,21 @@
 <template>
   <transition name="app">
     <div id="app">
-      <div id="nav">
-        <router-link to="/">Home</router-link>|
-        <router-link to="/story">About</router-link>
-      </div>
-      <transition name="view">
-        <router-view />
+      <transition  name="view">
+        <router-view :key="$route.params.id"/>
       </transition>
+     
     </div>
   </transition>
 </template>
+
+<script>
+export default {
+  name: "App",
+  components: {}
+};
+</script>
+
 
 <style>
 @font-face {
@@ -30,25 +35,29 @@ body {
   -moz-osx-font-smoothing: grayscale;
   text-align: center;
   color: #2c3e50;
+  position: fixed;
+  width: 100%;
+  height: 100%;
+  overflow-x: hidden
 }
 
-#nav {
-  padding: 30px;
-}
-
-#nav a {
-  font-weight: bold;
-  color: #2c3e50;
-}
-
-#nav a.router-link-exact-active {
-  color: #42b983;
-}
 .page {
   width: 100%;
   max-width: 100%;
   padding: 15px;
+  height: 100%;
+
   box-sizing: border-box;
+}
+
+.backgroundWave{
+  position: fixed;
+    width: 100vw;
+    bottom: 0;
+    left: 0;
+    z-index: -1;
+  height: auto;
+  
 }
 
 .view-enter-active,
@@ -72,24 +81,4 @@ body {
   transform: translateX(0px);
 }
 
-.app-enter-active,
-.app-leave-active {
-  transition: opacity 0.5s ease-in-out, transform 0.5s ease;
-}
-
-.app-enter-active {
-  transition-delay: 0.5s;
-}
-
-.app-enter,
-.app-leave-to {
-  opacity: 0;
-  transform: translateX(-100px);
-}
-
-.app-enter-to,
-.app-leave {
-  opacity: 1;
-  transform: translateX(0px);
-}
 </style>
