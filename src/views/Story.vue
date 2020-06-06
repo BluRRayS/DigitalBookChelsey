@@ -42,13 +42,20 @@ export default {
   methods: {
     next() {
       var id = parseInt(this.$route.params.id);
+      if(this.$store.getters.pageCount > id)
+      {
       id++;
       this.$router.push({ path: `/story/${id}` });
+      }
+     
     },
     previous() {
       var id = parseInt(this.$route.params.id);
-      id--;
-      this.$router.push({ path: `/story/${id}` });
+      if(this.$store.getters.pageCount < id)
+      {
+         id--;
+         this.$router.push({ path: `/story/${id}` });
+      }
     }
   }
 };
@@ -140,8 +147,6 @@ export default {
     margin-left: 0;
   }
 }
-
-
 
 .page-nav {
   display: flex;
