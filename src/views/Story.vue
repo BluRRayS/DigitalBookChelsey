@@ -125,6 +125,7 @@ export default {
   margin-left: 2em;
 }
 
+
 @media only screen and (max-width: 768px) {
   .bee {
     display: none;

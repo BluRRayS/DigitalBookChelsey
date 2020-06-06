@@ -45,8 +45,12 @@ p {
   font-size: 18px;
   padding: 0.5em 2em 0.5em 2em;
   cursor: pointer;
-  transition: ease-in-out 0.5s;
+  transition: all ease-in 0.4s;
   outline: none;
+}
+
+a :hover {
+  transform: scale(1.1);
 }
 
 .bee-image {
