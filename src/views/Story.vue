@@ -51,7 +51,7 @@ export default {
     },
     previous() {
       var id = parseInt(this.$route.params.id);
-      if(this.$store.getters.pageCount < id)
+      if(id > 1)
       {
          id--;
          this.$router.push({ path: `/story/${id}` });
