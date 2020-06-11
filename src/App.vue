@@ -38,6 +38,7 @@ body {
   position: fixed;
   width: 100%;
   height: 100%;
+  height: calc(var(--vh, 1vh) * 100);
   overflow-x: hidden;
   min-height: -webkit-fill-available;
 }
@@ -48,6 +49,7 @@ body {
   padding: 15px;
   height: 100%;
   min-height: -webkit-fill-available;
+  height: calc(var(--vh, 1vh) * 100);
   box-sizing: border-box;
 }
 
