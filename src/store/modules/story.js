@@ -56,17 +56,17 @@ const state = {
         },
         {
             id: 12,
-            image: require('@/assets/images/page10.jpeg'),
+            image: require('@/assets/images/page12.jpeg'),
             text: "Maar wat ben ik dan zei Lenny het lammetje. Ik weet wat je bent je bent een schaap zei Guus geit. Ga maar eens bij hun langs. Dat is een goed idee zei Lenny het lammetje."
         },
         {
             id: 13,
-            image: require('@/assets/images/page10.jpeg'),
+            image: require('@/assets/images/page13.jpeg'),
             text: "Lenny het lammetje kwam aan bij de schapen weiden. Ben ik een schaap vroeg Lenny het lammetje. Ja blèren de schapen in koor. Jij bent een schaap want je hebt een wollen witten vacht, korte pootjes en een klein staartje zei Suzy schaap."
         },
         {
             id: 14,
-            image: require('@/assets/images/page10.jpeg'),
+            image: require('@/assets/images/page14.jpeg'),
             text: "Lenny het lammetje weet nu eindelijk wat hij is. hij is een schaap. daar is hij heel blij mee. Hij rent nu vrolijk door de schapen weiden met al zijn schapen vriendjes."
         },
     ]
