@@ -38,7 +38,8 @@ body {
   position: fixed;
   width: 100%;
   height: 100%;
-  overflow-x: hidden
+  overflow-x: hidden;
+  min-height: -webkit-fill-available;
 }
 
 .page {
@@ -46,7 +47,7 @@ body {
   max-width: 100%;
   padding: 15px;
   height: 100%;
-
+  min-height: -webkit-fill-available;
   box-sizing: border-box;
 }
 

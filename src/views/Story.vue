@@ -6,7 +6,7 @@
     <img class="bee" src="../assets/bee.png" />
     <div class="story-row">
       <img
-        src="https://www.webfx.com/blog/images/cdn.designinstruct.com/files/582-how-to-image-placeholders/generic-image-placeholder.png"
+        v-bind:src="getPage.image"
         alt="prent"
         class="story-image"
       />
